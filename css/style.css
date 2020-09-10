@@ -4,6 +4,7 @@
     body {
     color: #000;
     background-color: #FFFFFF;
+    font-family: Roboto;
 }
     .header-link 
     {
@@ -104,7 +105,53 @@
                     line-height: 31px;
                     letter-spacing: 0.03em;  
                     color: #2196F3;   
-                }  
-                
+                }
+                .footer-link 
+                {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                } 
+                .list-buttons 
+                {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;      
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: #212121;
+                }
+                .list-buttons:hover,    
+                .list-buttons:focus 
+                {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.02em;
+                color: #2196F3;
+                } 
+                .projects-title 
+                {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 36px;
+                letter-spacing: 0.06em;
+                color: #212121;
+                }
+               .projects-text 
+               {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 30px;
+                letter-spacing: 0.03em;
+                color: #757575;
+               } 
 
                 
