@@ -1,0 +1,110 @@
+* {
+    margin: 0px; padding: 0px;
+}
+    body {
+    color: #000;
+    background-color: #FFFFFF;
+}
+    .header-link 
+    {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .header-link:hover    
+    .header-link:focus 
+                {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.02em;
+                color: #2196F3;
+                }  
+    .hero       
+                {
+                background-color: #2F303A
+                }
+    .hero-title 
+                {
+                font-style: normal;
+                font-weight: 900;
+                font-size: 44px;
+                line-height: 60px;
+                color: #FFFFFF;
+                }
+    .hero-btn {
+
+}
+    .advantage-title 
+                {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #212121;
+                }
+    .advantage-text 
+                {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+                color: #757575;
+                } 
+    .function-title 
+                {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: #212121;
+                } 
+    .staff-title 
+                {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-align: center;
+                    letter-spacing: 0.03em;  
+                    color: #212121;
+                } 
+    .staff-name 
+                {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: #212121;
+                } 
+    .staff-position 
+                {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: #757575;
+                } 
+    .footer-logo 
+                {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 31px;
+                    letter-spacing: 0.03em;  
+                    color: #2196F3;   
+                }  
+                
+
+                
