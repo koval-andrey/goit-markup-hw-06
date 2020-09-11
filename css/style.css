@@ -1,7 +1,4 @@
-
-}
-:root 
-    {
+:root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color:  #2196F3;
@@ -20,20 +17,21 @@ ul {list-style-type: none; }
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
-        text-decoration-line: none;
+        text-decoration-line:none;
         color: var(--title-text-color);
-
     }
-    /*реакция ссылок*/
+        
+    
+/*реакция ссылок*/
     .header-link:hover,    
-    .header-link:focus 
-                {
+    .header-link:focus { 
+                
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 16px;
                 letter-spacing: 0.02em;
                 text-decoration-line: none;
-                color: color: var(--accent-color);
+                color: var(--accent-color);
                 } 
                 /*стили для index.html*/ 
     .hero       
@@ -173,7 +171,7 @@ ul {list-style-type: none; }
                 font-weight: normal;
                 font-size: 14px;
                 line-height: 24px;
-                letter-spacing: 0.03em
+                letter-spacing: 0.03em;
                 text-decoration-line: none;
                 color: var(--primary-text-color);
                 } 
