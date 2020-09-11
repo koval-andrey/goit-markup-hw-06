@@ -1,6 +1,13 @@
 * {
     margin: 0px; padding: 0px;
 }
+:root 
+    {
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color: #2196F3;
+}
+
     body {
     color: #000;
     background-color: #FFFFFF;
@@ -21,8 +28,9 @@
                 font-size: 14px;
                 line-height: 16px;
                 letter-spacing: 0.02em;
-                color: #2196F3;
-                }  
+                color: var(--accent-color);
+                } 
+                /*стили для index.html*/ 
     .hero       
                 {
                 background-color: #2F303A
@@ -46,7 +54,7 @@
                 line-height: 16px;
                 letter-spacing: 0.03em;
                 text-transform: uppercase;
-                color: #212121;
+                color: var(--title-text-color);
                 }
     .advantage-text 
                 {
@@ -55,7 +63,7 @@
                 font-size: 14px;
                 line-height: 24px;
                 letter-spacing: 0.03em;
-                color: #757575;
+                color: var(--primary-text-color);
                 } 
     .function-title 
                 {
@@ -65,7 +73,7 @@
                     line-height: 42px;
                     text-align: center;
                     letter-spacing: 0.03em;
-                    color: #212121;
+                    color: var(--title-text-color);
                 } 
     .staff-title 
                 {
@@ -75,7 +83,7 @@
                     line-height: 42px;
                     text-align: center;
                     letter-spacing: 0.03em;  
-                    color: #212121;
+                    color: var(--title-text-color);
                 } 
     .staff-name 
                 {
@@ -85,7 +93,7 @@
                     line-height: 19px;
                     text-align: center;
                     letter-spacing: 0.03em;
-                    color: #212121;
+                    color: var(--title-text-color);
                 } 
     .staff-position 
                 {
@@ -95,7 +103,7 @@
                     line-height: 19px;
                     text-align: center;
                     letter-spacing: 0.03em;
-                    color: #757575;
+                    color: var(--primary-text-color);
                 } 
     .footer-logo 
                 {
@@ -104,9 +112,9 @@
                     font-size: 26px;
                     line-height: 31px;
                     letter-spacing: 0.03em;  
-                    color: #2196F3;   
+                    color: var(--accent-color);   
                 }
-                .footer-link 
+    .footer-link 
                 {
                     font-style: normal;
                     font-weight: normal;
@@ -115,7 +123,7 @@
                     letter-spacing: 0.03em;
                     color: #FFFFFF;
                 } 
-                .list-buttons 
+    .list-buttons 
                 {
                     font-style: normal;
                     font-weight: 500;
@@ -123,8 +131,9 @@
                     line-height: 26px;      
                     text-align: center;
                     letter-spacing: 0.03em;
-                    color: #212121;
+                    color: var(--title-text-color);
                 }
+                /*активные кнопки*/
                 .list-buttons:hover,    
                 .list-buttons:focus 
                 {
@@ -133,25 +142,25 @@
                 font-size: 14px;
                 line-height: 16px;
                 letter-spacing: 0.02em;
-                color: #2196F3;
+                color: var(--accent-color);
                 } 
-                .projects-title 
+    .projects-title 
                 {
                 font-style: normal;
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 36px;
                 letter-spacing: 0.06em;
-                color: #212121;
+                color: var(--title-text-color);
                 }
-               .projects-text 
+    .projects-text 
                {
                 font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 30px;
                 letter-spacing: 0.03em;
-                color: #757575;
+                color: var(--primary-text-color);
                } 
 
                 
