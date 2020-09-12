@@ -3,32 +3,32 @@
     --title-text-color: #212121;
     --accent-color:  #2196F3;
 }
-    body {
-    color: #000;
-    background-color: #FFFFFF;
+    body 
+    {
     font-family: "Roboto", sans-serif;
-    font-style: normal;
-    
-}
-ul {list-style-type: none; }
+    font-style: normal;   
+    }
+    /*убираю точки в списках*/
+    ul 
+    {list-style-type: none; }
+    /*шапка*/
     .header-link 
     {
         font-style: normal;
+        list-style: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
         text-decoration-line:none;
         color: var(--title-text-color);
     }
-        
-    
 /*реакция ссылок*/
     .header-link:hover,    
     .header-link:focus { 
                 
                 font-weight: 500;
                 font-size: 14px;
-                line-height: 16px;
+                line-height: 1.14;
                 letter-spacing: 0.02em;
                 text-decoration-line: none;
                 color: var(--accent-color);
@@ -42,25 +42,38 @@ ul {list-style-type: none; }
                 {
                 font-weight: 900;
                 font-size: 44px;
-                line-height: 60px;
+                line-height: 1.36;
                 color: #FFFFFF;
                 }
-    .hero-btn {
+    .hero-btn   {
                 font-weight: bold;
                 font-size: 16px;
-                line-height: 30px;
+                line-height: 1.875;
                 display: flex;
                 align-items: center;
                 text-align: center;
                 letter-spacing: 0.06em;
                 color: #FFFFFF;
-
-}
+                }
+                /*активная кнопка в hero*/
+                .hero-btn:hover,
+                .hero-btn:focus 
+                {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 1.875;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.06em;
+                    color: var(--accent-color);    
+                }
+                /*преимущества*/
     .advantage-title 
                 {
                 font-weight: bold;
                 font-size: 14px;
-                line-height: 16px;
+                line-height: 1.143;
                 letter-spacing: 0.03em;
                 text-transform: uppercase;
                 color: var(--title-text-color);
@@ -69,24 +82,31 @@ ul {list-style-type: none; }
                 {
                 font-weight: normal;
                 font-size: 14px;
-                line-height: 24px;
+                line-height: 1.714;
                 letter-spacing: 0.03em;
                 color: var(--primary-text-color);
                 } 
+                /*функционал*/
     .function-title 
                 {
                     font-weight: bold;
                     font-size: 36px;
-                    line-height: 42px;
+                    line-height: 1.166;
                     text-align: center;
                     letter-spacing: 0.03em;
                     color: var(--title-text-color);
-                } 
+                }
+                /*на hw3*/         
+    .function-img 
+                {
+
+                }
+                /*персонал*/ 
     .staff-title 
                 {
                     font-weight: bold;
                     font-size: 36px;
-                    line-height: 42px;
+                    line-height: 1.166;
                     text-align: center;
                     letter-spacing: 0.03em;  
                     color: var(--title-text-color);
@@ -95,7 +115,7 @@ ul {list-style-type: none; }
                 {
                     font-weight: 500;
                     font-size: 16px;
-                    line-height: 19px;
+                    line-height: 1.1875;
                     text-align: center;
                     letter-spacing: 0.03em;
                     color: var(--title-text-color);
@@ -104,16 +124,17 @@ ul {list-style-type: none; }
                 {
                     font-weight: normal;
                     font-size: 16px;
-                    line-height: 19px;
+                    line-height: 1.1875;
                     text-align: center;
                     letter-spacing: 0.03em;
                     color: var(--primary-text-color);
                 } 
+                /*подвал*/
     .footer-logo 
                 {
                     font-weight: bold;
                     font-size: 26px;
-                    line-height: 31px;
+                    line-height: 1.192;
                     letter-spacing: 0.03em;  
                     color: var(--accent-color);   
                 }
@@ -121,16 +142,27 @@ ul {list-style-type: none; }
                 {
                     font-weight: normal;
                     font-size: 14px;
-                    line-height: 24px;
+                    line-height: 1.714;
                     letter-spacing: 0.03em;
                     text-decoration-line: none;
                     color: rgba(255, 255, 255, 0.6);
                 } 
+                /*активные ссылки в подвале*/
+                .footer-link:hover,
+                .footer-link:focus 
+                {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 1.714;
+                letter-spacing: 0.03em;
+                text-decoration-line: none;
+                color:var(--accent-color);   
+                }
     .list-buttons 
                 {
                     font-weight: 500;
                     font-size: 16px;
-                    line-height: 26px;      
+                    line-height: 1.625;      
                     text-align: center;
                     letter-spacing: 0.03em;
                     color: var(--title-text-color);
@@ -141,7 +173,7 @@ ul {list-style-type: none; }
                 {
                 font-weight: 500;
                 font-size: 14px;
-                line-height: 16px;
+                line-height: 1.143;
                 letter-spacing: 0.02em;
                 color: #2196F3;
                 } 
@@ -149,7 +181,7 @@ ul {list-style-type: none; }
                 {
                 font-weight: bold;
                 font-size: 18px;
-                line-height: 36px;
+                line-height: 2;
                 letter-spacing: 0.06em;
                 color: var(--title-text-color);
                 }
@@ -157,9 +189,14 @@ ul {list-style-type: none; }
                {
                 font-weight: normal;
                 font-size: 16px;
-                line-height: 30px;
+                line-height: 1.875;
                 letter-spacing: 0.03em;
                 color: var(--primary-text-color);
+               }
+               /*на hw3*/
+               .projects-img 
+               {
+                   
                }
     .footer 
                 {
@@ -170,11 +207,22 @@ ul {list-style-type: none; }
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
-                line-height: 24px;
+                line-height: 1.715;
                 letter-spacing: 0.03em;
                 text-decoration-line: none;
                 color: var(--primary-text-color);
                 } 
+                .footer-address:hover,
+                .footer-address:focus 
+                {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 1.715;
+                letter-spacing: 0.03em;
+                text-decoration-line: none;
+                color:var(--accent-color);   
+                }
             
 
                 
