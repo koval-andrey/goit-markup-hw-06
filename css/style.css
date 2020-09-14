@@ -158,7 +158,12 @@
                 text-decoration-line: none;
                 color:var(--accent-color);   
                 }
+                /*стили для portfolio*/
     .list-buttons 
+                {
+
+                }
+    .list-button 
                 {
                     font-weight: 500;
                     font-size: 16px;
@@ -178,8 +183,8 @@
                     border-radius: 4px;
                 }
                 /*активные кнопки*/
-                .list-buttons:hover,    
-                .list-buttons:focus 
+                .list-button:hover,    
+                .list-button:focus 
                 {
                     font-weight: 500;
                     font-size: 16px;
@@ -187,12 +192,7 @@
                     text-align: center;
                     letter-spacing: 0.03em;
                     color: #FFFFFF;
-                    position: absolute;
-
-                    height: 38px;
-                    left: 495px;
-                    top: 174px;
-
+                    
                     background: #2196F3;
                     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
                                 0px 1px 2px rgba(0, 0, 0, 0.08), 
