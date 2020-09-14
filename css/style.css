@@ -24,7 +24,8 @@
     }
 /*реакция ссылок*/
     .header-link:hover,    
-    .header-link:focus { 
+    .header-link:focus
+        { 
                 
                 font-weight: 500;
                 font-size: 14px;
@@ -33,6 +34,11 @@
                 text-decoration-line: none;
                 color: var(--accent-color);
                 } 
+
+    .header-link.current 
+                {
+                color: var(--accent-color);   
+                }
                 /*стили для index.html*/ 
     .hero       
                 {
