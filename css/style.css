@@ -252,6 +252,40 @@
                 text-decoration-line: none;
                 color:var(--accent-color);   
                 }
+                .logo-web 
+                {
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 31px;
+
+
+                    letter-spacing: 0.03em;
+
+                    color: var(--accent-color)   
+                }
+                .header .header-link .logo-studio 
+                {
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 31px;
+                    letter-spacing: 0.03em;
+                    color: var(--title-text-color); 
+                }
+
+                    .footer .footer-link .logo-studio 
+                    {
+                        font-family: Raleway;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 26px;
+                        line-height: 31px;
+                        letter-spacing: 0.03em;
+                        color: #FFFFFF;;    
+                    }
             
 
                 
