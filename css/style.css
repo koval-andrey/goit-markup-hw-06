@@ -1,3 +1,12 @@
+html {box-sizing: border-box;}
+*,
+*::before,
+*::after 
+        {
+            box-sizing: inherit;
+            margin: 0;
+            padding: 0;
+        }
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -12,9 +21,12 @@
     ul 
     {list-style-type: none; }
     /*шапка*/
+    .header 
+    {background-color: tomato;}
     .header-link 
     {
         font-style: normal;
+        
         list-style: none;
         font-weight: 500;
         font-size: 14px;
@@ -40,9 +52,15 @@
                 color: var(--accent-color);   
                 }
                 /*стили для index.html*/ 
+                section .container 
+                {
+                    width: 1200;
+                    margin: 0 auto;
+                }
     .hero       
                 {
                     background: #2F303A;
+                    background-color: blue
                 }
     .hero-title 
                 {
@@ -75,6 +93,8 @@
                     color: var(--accent-color);    
                 }
                 /*преимущества*/
+                .advantage 
+                {background-color: tomato}
     .advantage-title 
                 {
                 font-weight: bold;
@@ -93,6 +113,8 @@
                 color: var(--primary-text-color);
                 } 
                 /*функционал*/
+                .function 
+                {background-color: blue}
     .function-title 
                 {
                     font-weight: bold;
@@ -107,7 +129,10 @@
                 {
 
                 }
-                /*персонал*/ 
+                /*персонал*/
+                .staff {
+                    background-color: tomato;
+                } 
     .staff-title 
                 {
                     font-weight: bold;
