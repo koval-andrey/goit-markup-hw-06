@@ -3,7 +3,6 @@ html {box-sizing: border-box;}
 *::before,
 *::after 
         {
-            box-sizing: inherit;
             margin: 0;
             padding: 0;
         }
@@ -21,8 +20,26 @@ html {box-sizing: border-box;}
     ul 
     {list-style-type: none; }
     /*шапка*/
+
+   .container 
+   {width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;} 
+    }
     .header 
     {background-color: tomato;}
+    .header .container 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+     .navigation-list 
+     {
+         display: flex;
+     } 
     .header-link 
     {
         font-style: normal;
@@ -33,6 +50,15 @@ html {box-sizing: border-box;}
         line-height: 16px;
         text-decoration-line:none;
         color: var(--title-text-color);
+    }
+
+    .navigation-list-items 
+    {
+        padding: 32px 0;
+    }
+    .navigation-list-items:not(:last-child) 
+        {
+        margin-right: 50px;   
     }
 /*реакция ссылок*/
     .header-link:hover,    
@@ -49,27 +75,72 @@ html {box-sizing: border-box;}
 
     .header-link.current 
                 {
-                color: var(--accent-color);   
+                color: var(--accent-color); 
+                header-link-address  
                 }
+                .address 
+                {
+                    display: flex;
+                }
+                .address-items 
+                {
+                    padding: 32px 0;
+                }
+                .address-items:not(:last-child) 
+                {
+                margin-right: 50px;   
+            } 
+                
+            .address .header-link-address 
+    {
+        font-style: normal;
+        
+        list-style: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line:none;
+        color: var(--title-text-color);
+    }
+/*реакция ссылок*/
+.address .header-link-address:hover,    
+.address .header-link-address:focus
+        { 
+                
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.02em;
+                text-decoration-line: none;
+                color: var(--accent-color);
+                } 
                 /*стили для index.html*/ 
                 section .container 
                 {
-                    width: 1200;
+                    width: 1600;
                     margin: 0 auto;
                 }
     .hero       
                 {
-                    background: #2F303A;
-                    background-color: blue
+                background-color: #2F303A
                 }
+    .hero .container 
+    {display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px;}
+    
     .hero-title 
                 {
+                max-width: 500px;
+                margin-bottom: 30px;
                 font-weight: 900;
                 font-size: 44px;
+                text-align: center;
                 line-height: 1.36;
                 color: #FFFFFF;
                 }
-    .hero-btn   {
+    .hero .container .hero-btn   {
                 font-weight: bold;
                 font-size: 16px;
                 line-height: 1.875;
@@ -78,6 +149,11 @@ html {box-sizing: border-box;}
                 text-align: center;
                 letter-spacing: 0.06em;
                 color: #FFFFFF;
+                padding: 12px;
+                min-width: 160px;
+                height: 40px;
+                border-radius: 4px;
+                background-color: #2196F3;
                 }
                 /*активная кнопка в hero*/
                 .hero-btn:hover,
