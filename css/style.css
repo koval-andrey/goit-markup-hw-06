@@ -5,6 +5,7 @@ html {box-sizing: border-box;}
         {
             margin: 0;
             padding: 0;
+
         }
 :root {
     --primary-text-color: #757575;
@@ -14,7 +15,8 @@ html {box-sizing: border-box;}
     body 
     {
     font-family: "Roboto", sans-serif;
-    font-style: normal;   
+    font-style: normal;
+    max-width: 1600px;   
     }
     /*убираю точки в списках*/
     ul 
@@ -23,9 +25,10 @@ html {box-sizing: border-box;}
 
    .container 
    {width: 1200px;
-    padding: 0 15px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;} 
-    }
+    
     .header 
     {background-color: tomato;}
     .header .container 
@@ -76,7 +79,7 @@ html {box-sizing: border-box;}
     .header-link.current 
                 {
                 color: var(--accent-color); 
-                header-link-address  
+                  
                 }
                 .address 
                 {
@@ -169,8 +172,32 @@ html {box-sizing: border-box;}
                     color: var(--accent-color);    
                 }
                 /*преимущества*/
-                .advantage 
-                {background-color: tomato}
+                
+                    .advantage
+                    {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding-left: 215px;
+                        padding-right: 215px;
+                        padding-top: 94px;
+                        padding-bottom: 94px;
+                    }
+                    
+            .advantage .advantage-list
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .advantage-item 
+                {
+                max-width: 270px;
+                }
+                .advantage-item:not(:last-child) 
+                {
+                margin-right: 30px;}  
+
     .advantage-title 
                 {
                 font-weight: bold;
