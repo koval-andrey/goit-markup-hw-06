@@ -22,6 +22,9 @@ html {box-sizing: border-box;}
     ul 
     {list-style-type: none; }
     /*шапка*/
+    img {
+        display: block;
+      }
 
    .container 
    {width: 1200px;
@@ -218,6 +221,19 @@ html {box-sizing: border-box;}
                 /*функционал*/
                 .function 
                 {background-color: blue}
+                .function-container 
+                {
+                  display: flex; 
+                  flex-direction: column;
+                  align-items: center; 
+                }
+                .function-list 
+                {
+                    display: flex;    
+                }
+                .function-item:not(:last-child) 
+                {
+                margin-right: 30px;}
     .function-title 
                 {
                     font-weight: bold;
@@ -226,6 +242,7 @@ html {box-sizing: border-box;}
                     text-align: center;
                     letter-spacing: 0.03em;
                     color: var(--title-text-color);
+                    margin-bottom: 50px;
                 }
                 /*на hw3*/         
     .function-img 
@@ -235,7 +252,26 @@ html {box-sizing: border-box;}
                 /*персонал*/
                 .staff {
                     background-color: tomato;
+                }
+                .staff-container 
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 94px;
+                    padding-bottom: 94px;
+
                 } 
+                .staff-list-container
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 30px;
+                }
+                .staff-item:not(:last-child) 
+                {
+                margin-right: 30px;}
     .staff-title 
                 {
                     font-weight: bold;
@@ -244,7 +280,12 @@ html {box-sizing: border-box;}
                     text-align: center;
                     letter-spacing: 0.03em;  
                     color: var(--title-text-color);
-                } 
+                    margin-bottom: 50px;
+                }
+                .staff-img 
+                {
+                  margin-bottom: 30px;  
+                }
     .staff-name 
                 {
                     font-weight: 500;
@@ -253,6 +294,7 @@ html {box-sizing: border-box;}
                     text-align: center;
                     letter-spacing: 0.03em;
                     color: var(--title-text-color);
+                    margin-bottom: 10px;
                 } 
     .staff-position 
                 {
@@ -264,13 +306,28 @@ html {box-sizing: border-box;}
                     color: var(--primary-text-color);
                 } 
                 /*подвал*/
-    .footer-logo 
+                .footer .footer-container 
+                {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+                    padding-left: 215px;
+                }
+                .footer .footer-logo 
                 {
                     font-weight: bold;
                     font-size: 26px;
                     line-height: 1.192;
                     letter-spacing: 0.03em;  
-                    color: var(--accent-color);   
+                    color: var(--accent-color);
+                    margin-bottom: 20px;  
+                }
+                footer .footer-list .footer-list-container 
+                {
+                 display: flex;
+                 flex-direction: column; 
+                 padding-top: 20px;  
                 }
     .footer-link 
                 {
@@ -280,6 +337,7 @@ html {box-sizing: border-box;}
                     letter-spacing: 0.03em;
                     text-decoration-line: none;
                     color: rgba(255, 255, 255, 0.6);
+                    margin-top: 9px;
                 } 
                 /*активные ссылки в подвале*/
                 .footer-link:hover,
