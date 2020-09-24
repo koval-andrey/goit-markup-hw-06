@@ -39,7 +39,6 @@ html {box-sizing: border-box;}
     {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         border: 1px solid #ECECEC;
     }
     
@@ -48,7 +47,18 @@ html {box-sizing: border-box;}
      {
          display: flex;
      } 
-    .header-link 
+     .header-link-logo 
+     {
+        font-style: normal;
+        list-style: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line:none;
+        color: var(--title-text-color);
+        margin-right: 93px;   
+     }
+     .header-link 
     {
         font-style: normal;
         
@@ -98,8 +108,13 @@ html {box-sizing: border-box;}
                 {
                 margin-right: 50px;   
             } 
-                
-            .address .header-link-address 
+         .address-list 
+         {   
+           display: flex;
+           margin-left: auto;
+         }       
+
+        .header-link-address 
     {
         font-style: normal;
         
@@ -109,18 +124,19 @@ html {box-sizing: border-box;}
         line-height: 16px;
         text-decoration-line:none;
         color: var(--primary-text-color);
+        margin-left: auto;
     }
 /*реакция ссылок*/
-.address .header-link-address:hover,    
-.address .header-link-address:focus
+        .header-link-address:hover,    
+        .header-link-address:focus
         { 
-                
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 1.14;
                 letter-spacing: 0.02em;
                 text-decoration-line: none;
                 color: var(--accent-color);
+                margin-left: auto;
                 } 
                 /*стили для index.html*/ 
                 section .container 
@@ -499,7 +515,7 @@ html {box-sizing: border-box;}
 
                     color: var(--accent-color)   
                 }
-                .header .header-link .logo-studio 
+                .header .header-link-logo .logo-studio 
                 {
                     font-family: Raleway;
                     font-style: normal;
