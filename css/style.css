@@ -21,10 +21,11 @@ html {box-sizing: border-box;}
     /*убираю точки в списках*/
     ul 
     {list-style-type: none; }
-    /*шапка*/
-    img {
+    
+    img 
+    {
         display: block;
-      }
+    }
 
    .container 
    {
@@ -33,18 +34,21 @@ html {box-sizing: border-box;}
         margin: 0 auto;
       }
 
-    
-   
+    .header 
+    {
+        border-bottom: 1px solid #ECECEC;
+    }
+       
     .header .container 
     {
         display: flex;
-        align-items: center;
-        width: 1600px;
-        padding:0 215px;
-        border-bottom: 1px solid #ECECEC;
-        
+        align-items: center;   
     }
-    
+    .navigation 
+    {
+        display: flex;
+        align-items: center;
+    }
        
      .navigation-list 
      {
@@ -183,8 +187,8 @@ html {box-sizing: border-box;}
                 background-color: #2196F3;
                 }
                 /*активная кнопка в hero*/
-                .hero-btn:hover,
-                .hero-btn:focus 
+    .hero-btn:hover,
+    .hero-btn:focus 
                 {
                     font-weight: bold;
                     font-size: 16px;
@@ -197,7 +201,7 @@ html {box-sizing: border-box;}
                 }
                 /*преимущества*/
                 
-                    .advantage .container
+    .advantage .container
                     {
                         display: flex;
                         align-items: center;
@@ -206,17 +210,17 @@ html {box-sizing: border-box;}
                         padding-bottom: 94px;
                     }
                     
-            .advantage .advantage-list
+    .advantage .advantage-list
                 {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                 }
-                .advantage-item 
+    .advantage-item 
                 {
                 max-width: 270px;
                 }
-                .advantage-item:not(:last-child) 
+    .advantage-item:not(:last-child) 
                 {
                 margin-right: 30px;}  
 
@@ -239,18 +243,18 @@ html {box-sizing: border-box;}
                 } 
                 /*функционал*/
             
-                .function .container 
+    .function .container 
                 {
                   display: flex; 
                   flex-direction: column;
                   align-items: center;
                   padding-bottom: 94px; 
                 }
-                .function-list 
+    .function-list 
                 {
                     display: flex;    
                 }
-                .function-item:not(:last-child) 
+    .function-item:not(:last-child) 
                 {
                 margin-right: 30px;}
     .function-title 
@@ -263,18 +267,14 @@ html {box-sizing: border-box;}
                     color: var(--title-text-color);
                     margin-bottom: 50px;
                 }
-                /*на hw3*/         
-    .function-img 
-                {
-
-                }
+                
                 /*персонал*/
-                .staff 
+    .staff 
                 {
                     background: #F5F4FA;    
                 }
 
-                .staff .container 
+    .staff .container 
                 {
                     display: flex;
                     flex-direction: column;
@@ -283,7 +283,7 @@ html {box-sizing: border-box;}
                     padding-bottom: 94px;
                                        
                 } 
-                .staff-list
+    .staff-list
                 {
                     display: flex;
                     align-items: center;
@@ -291,7 +291,7 @@ html {box-sizing: border-box;}
                     
                     
                 }
-                .staff-item {
+    .staff-item {
                 background: #FFFFFF;
                 padding-bottom: 30px;
                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -312,7 +312,7 @@ html {box-sizing: border-box;}
                     color: var(--title-text-color);
                     margin-bottom: 50px;
                 }
-                .staff-img 
+    .staff-img 
                 {
                   margin-bottom: 30px;  
                 }
@@ -336,13 +336,13 @@ html {box-sizing: border-box;}
                     color: var(--primary-text-color);
                 } 
                 /*подвал*/
-                .footer .footer-container 
+    .footer .container 
                 {
                     display: flex;
                     flex-direction: column;
                     padding-top: 60px;
                     padding-bottom: 60px;
-                    padding-left: 215px;
+                
                 }
                 .footer .footer-logo 
                 {
@@ -382,12 +382,11 @@ html {box-sizing: border-box;}
                 }
                 /*стили для portfolio*/
                 
-                .main-container
+                .main .container
                 {
                     display: flex;
                     justify-content: center;
-                    width: 1200px;
-                    margin: 0px auto;
+                    
                 }
              
                 .lists-buttons 
@@ -453,11 +452,11 @@ html {box-sizing: border-box;}
                     margin-bottom: 30px;
                     border: 1px solid #EEEEEE;
                 }
-                .project-item:nth-child(3n) 
+    .project-item:nth-child(3n) 
                 {
                 margin-right: 0px;    
                 }
-                .project-item:nth-last-child(-n+3n)
+    .project-item:nth-last-child(-n+3n)
                 {
                     margin-bottom: 0px;
                 }
@@ -482,7 +481,7 @@ html {box-sizing: border-box;}
                 padding-left: 24px;
                 color: var(--primary-text-color);
                }
-               /*на hw3*/
+               
                
     .footer 
                 {
@@ -498,8 +497,8 @@ html {box-sizing: border-box;}
                 text-decoration-line: none;
                 color: var(--primary-text-color);
                 } 
-                .footer-address:hover,
-                .footer-address:focus 
+    .footer-address:hover,
+    .footer-address:focus 
                 {
                 font-style: normal;
                 font-weight: normal;
