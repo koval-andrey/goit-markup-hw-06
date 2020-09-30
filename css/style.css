@@ -246,14 +246,57 @@ html {box-sizing: border-box;}
                 align-items: center;
                 width: 270px;
                 }
-                .advantage-item::before 
+                .advantage-item:nth-child(1)::before 
                 {
-                    content: '';
-                    height: 100px;
-                    background-image: url(../img/hw-04/antenna\ 1.svg);  
+                    display: block;
+                    content:"";
+                    width: 270px;
+                    height: 120px;
+                    background-color: #F5F4FA;
+                    border-radius: 4px;
+                    background-image: url(../img/hw-04/antenna\ 1.svg);
+                                   
                     background-position: center;
                     background-repeat: no-repeat;
-                    background-size: contain;
+                }
+                    .advantage-item:nth-child(2)::before 
+                {
+                    display: block;
+                    content:"";
+                    width: 270px;
+                    height: 120px;
+                    background-color: #F5F4FA;
+                    border-radius: 4px;
+                    background-image: url(../img/hw-04/clock\ 1.svg);
+                                   
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .advantage-item:nth-child(3)::before 
+                {
+                    display: block;
+                    content:"";
+                    width: 270px;
+                    height: 120px;
+                    background-color: #F5F4FA;
+                    border-radius: 4px;
+                    background-image: url(../img/hw-04/diagram\ 1.svg);
+                                   
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .advantage-item:nth-child(4)::before 
+                {
+                    display: block;
+                    content:"";
+                    width: 270px;
+                    height: 120px;
+                    background-color: #F5F4FA;
+                    border-radius: 4px;
+                    background-image: url(../img/hw-04/astronaut\ 1.svg);
+                                   
+                    background-position: center;
+                    background-repeat: no-repeat;
                 }
     .advantage-item:not(:last-child) 
                 {
@@ -287,7 +330,7 @@ html {box-sizing: border-box;}
                 }
     .function-list 
                 {
-                    display: flex;    
+                    display: flex; 
                 }
     .function-item:not(:last-child) 
                 {
@@ -374,7 +417,6 @@ html {box-sizing: border-box;}
     .footer .container 
                 {
                     display: flex;
-                    flex-direction: column;
                     padding-top: 60px;
                     padding-bottom: 60px;
                 
@@ -391,8 +433,14 @@ html {box-sizing: border-box;}
                 footer .footer-list
                 {
                  display: flex;
-                 flex-direction: column; 
-                 padding-top: 20px;  
+                 flex-direction: column;
+                 padding-top: 20px; 
+                 margin-right: 70px; 
+                }
+                .footer-right 
+                {
+                    display: flex;
+                    align-items: flex-start;  
                 }
     .footer-link 
                 {
@@ -404,6 +452,15 @@ html {box-sizing: border-box;}
                     color: rgba(255, 255, 255, 0.6);
                     margin-top: 9px;
                 } 
+                .footer-link-join-title 
+                {
+                   
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 1.14;
+                        color: #FFFFFF;
+                }
                 /*активные ссылки в подвале*/
                 .footer-link:hover,
                 .footer-link:focus 
@@ -581,10 +638,7 @@ html {box-sizing: border-box;}
                     font-weight: bold;
                     font-size: 26px;
                     line-height: 31px;
-
-
                     letter-spacing: 0.03em;
-
                     color: var(--accent-color)   
                 }
                 .header .header-link-logo .logo-studio 
