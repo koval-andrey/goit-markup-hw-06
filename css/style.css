@@ -111,18 +111,15 @@ html {box-sizing: border-box;}
                 {
                     padding: 32px 0;
                 }
-                .address-items::before
+                .address-items svg
                 {
-                    display: inline-block;
-                    content: ""; 
-                    background-image: url(../img/hw-04/envelope\ \(hover\).svg);
-                    width: 16px;
-                    height: 12px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover; 
+                    fill: var(--primary-text-color);
                 }
-                
+                .address-items:hover svg
+                {
+                    fill: var(--accent-color);
+                }
+                             
                 .address-items:not(:last-child) 
                 {
                 margin-right: 50px;   
@@ -145,6 +142,7 @@ html {box-sizing: border-box;}
         color: var(--primary-text-color);
         margin-left: auto;
     }
+    
 /*реакция ссылок*/
         .header-link-address:hover,    
         .header-link-address:focus
@@ -258,6 +256,7 @@ html {box-sizing: border-box;}
                                    
                     background-position: center;
                     background-repeat: no-repeat;
+                    margin-bottom: 30px;
                 }
                     .advantage-item:nth-child(2)::before 
                 {
@@ -271,6 +270,7 @@ html {box-sizing: border-box;}
                                    
                     background-position: center;
                     background-repeat: no-repeat;
+                    margin-bottom: 30px;
                 }
                 .advantage-item:nth-child(3)::before 
                 {
@@ -284,6 +284,7 @@ html {box-sizing: border-box;}
                                    
                     background-position: center;
                     background-repeat: no-repeat;
+                    margin-bottom: 30px;
                 }
                 .advantage-item:nth-child(4)::before 
                 {
@@ -297,6 +298,7 @@ html {box-sizing: border-box;}
                                    
                     background-position: center;
                     background-repeat: no-repeat;
+                    margin-bottom: 30px;
                 }
     .advantage-item:not(:last-child) 
                 {
@@ -412,7 +414,30 @@ html {box-sizing: border-box;}
                     text-align: center;
                     letter-spacing: 0.03em;
                     color: var(--primary-text-color);
+                    margin-bottom: 16px;
                 } 
+                .social-list {
+                    display: flex;
+                    justify-content: space-evenly;
+                  }
+                  .social-list-link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                  }
+                  
+                  .social-list-link:hover {
+                    background-color: var(--accent-color);
+                  }
+                  
+                  .social-link-svg:hover 
+                  {
+                      fill:  #fff;
+                  }
                 /*подвал*/
     .footer .container 
                 {
@@ -440,7 +465,8 @@ html {box-sizing: border-box;}
                 .footer-right 
                 {
                     display: flex;
-                    align-items: flex-start;  
+                    align-items:center;
+                    flex-direction: column;  
                 }
     .footer-link 
                 {
@@ -605,6 +631,14 @@ html {box-sizing: border-box;}
                .clients-item:nth-child(6) 
                 {
                 margin-right: 0px;
+                }
+                .clients-icon-svg 
+                {
+                    fill: #AFB1B8;
+                }
+                .clients-icon-svg:hover
+                {
+                    fill: #2196F3;
                 }
     .footer 
                 {
