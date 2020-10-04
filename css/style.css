@@ -442,6 +442,7 @@ html {box-sizing: border-box;}
     .footer .container 
                 {
                     display: flex;
+                    align-items: center;
                     padding-top: 60px;
                     padding-bottom: 60px;
                 
@@ -462,10 +463,13 @@ html {box-sizing: border-box;}
                  padding-top: 20px; 
                  margin-right: 70px; 
                 }
+                .footer-left 
+                {
+                    margin-right: 70px;
+                }
                 .footer-right 
                 {
                     display: flex;
-                    align-items:center;
                     flex-direction: column;  
                 }
     .footer-link 
@@ -478,6 +482,33 @@ html {box-sizing: border-box;}
                     color: rgba(255, 255, 255, 0.6);
                     margin-top: 9px;
                 } 
+                .footer-social-list 
+                {
+                  display: flex;  
+                }
+                .footer-social-list-item 
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    margin-right: 10px;
+                }
+                .footer-social-list-item:last-child
+                {
+                    margin-right: 0px;    
+                }
+                .footer-social-list-item:hover 
+                {
+                 background: #2196F3;  
+                }
+                .footer-social-link-svg 
+                {
+                 fill: #FFFFFF;   
+                }
                 .footer-link-join-title 
                 {
                    
@@ -486,6 +517,7 @@ html {box-sizing: border-box;}
                         font-size: 14px;
                         line-height: 1.14;
                         color: #FFFFFF;
+                        margin-bottom: 20px;
                 }
                 /*активные ссылки в подвале*/
                 .footer-link:hover,
@@ -498,6 +530,63 @@ html {box-sizing: border-box;}
                 text-decoration-line: none;
                 color:var(--accent-color);   
                 }
+                .footer 
+                {
+                background: #2F303A;   
+                }
+    .footer-address 
+                {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 1.715;
+                letter-spacing: 0.03em;
+                text-decoration-line: none;
+                color: var(--primary-text-color);
+                } 
+    .footer-address:hover,
+    .footer-address:focus 
+                {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 1.715;
+                letter-spacing: 0.03em;
+                text-decoration-line: none;
+                color:var(--accent-color);   
+                }
+                .logo-web 
+                {
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 31px;
+                    letter-spacing: 0.03em;
+                    color: var(--accent-color)   
+                }
+                .header .header-link-logo .logo-studio 
+                {
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 31px;
+                    letter-spacing: 0.03em;
+                    color: var(--title-text-color);
+                    
+                }
+
+                    .footer .footer-link .logo-studio 
+                    {
+                        font-family: Raleway;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 26px;
+                        line-height: 31px;
+                        letter-spacing: 0.03em;
+                        color: #FFFFFF;;    
+                    }
                 /*стили для portfolio*/
                 
                 .main .container
@@ -640,60 +729,5 @@ html {box-sizing: border-box;}
                 {
                     fill: #2196F3;
                 }
-    .footer 
-                {
-                background: #2F303A;   
-                }
-    .footer-address 
-                {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 1.715;
-                letter-spacing: 0.03em;
-                text-decoration-line: none;
-                color: var(--primary-text-color);
-                } 
-    .footer-address:hover,
-    .footer-address:focus 
-                {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 1.715;
-                letter-spacing: 0.03em;
-                text-decoration-line: none;
-                color:var(--accent-color);   
-                }
-                .logo-web 
-                {
-                    font-family: Raleway;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 26px;
-                    line-height: 31px;
-                    letter-spacing: 0.03em;
-                    color: var(--accent-color)   
-                }
-                .header .header-link-logo .logo-studio 
-                {
-                    font-family: Raleway;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 26px;
-                    line-height: 31px;
-                    letter-spacing: 0.03em;
-                    color: var(--title-text-color);
-                    
-                }
 
-                    .footer .footer-link .logo-studio 
-                    {
-                        font-family: Raleway;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 26px;
-                        line-height: 31px;
-                        letter-spacing: 0.03em;
-                        color: #FFFFFF;;    
-                    }
+                    
