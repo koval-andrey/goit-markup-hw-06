@@ -104,26 +104,34 @@ html {box-sizing: border-box;}
                 color: var(--accent-color); 
                   
                 }
-                .address 
+        .address 
                 {
                     display: flex;
                 }
                 
-                .address-items
+        .address-items
                 {
                     padding: 32px 0;
                 }
-                .address-items svg
+        .address-items .iicon-smartphone
                 {
-                    fill: var(--primary-text-color);
+                fill: var(--primary-text-color);
                 }
-                .address-items:hover svg,
-                .address-items:focus svg
+        .address-items .icon-envelope
+                {
+                fill: var(--primary-text-color);
+                }
+        .header-link-address:hover .icon-envelope,
+        .header-link-address:focus .icon-envelope
                 {
                     fill: var(--accent-color);
                 }
-                             
-                .address-items:not(:last-child) 
+        .header-link-address:hover .icon-smartphone,
+        .header-link-address:focus .icon-smartphone
+                    {
+                        fill: var(--accent-color);
+                    }   
+        .address-items:not(:last-child) 
                 {
                 margin-right: 50px;   
             } 
@@ -135,8 +143,7 @@ html {box-sizing: border-box;}
 
         .header-link-address 
     {
-        font-style: normal;
-        
+        font-style: normal; 
         list-style: none;
         font-weight: 500;
         font-size: 14px;
@@ -145,23 +152,11 @@ html {box-sizing: border-box;}
         color: var(--primary-text-color);
         margin-left: auto;
     }
-    .address > .address-items:hover,
-    .address > .address-items:focus  
-                {
-                    color: var(--accent-color); 
-                }
-    
-/*реакция ссылок*/
+    /*реакция ссылок*/
         .header-link-address:hover,    
         .header-link-address:focus
-        { 
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1.14;
-                letter-spacing: 0.02em;
-                text-decoration-line: none;
-                color: var(--accent-color);
-                margin-left: auto;
+                { 
+                color: var(--accent-color); 
                 } 
                 /*стили для index.html*/ 
                 section .container 
@@ -453,10 +448,56 @@ html {box-sizing: border-box;}
 
                     fill: #AFB1B8;
                   }
-                  .social-link-svg:hover,
-                  .social-link-svg:focus 
+                  .social-list-link:hover .social-link-svg,
+                  .social-list-link:focus .social-link-svg 
                   {
                       fill:  #fff;
+                  }
+                  .clients .container 
+                  {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  padding-top: 94px; 
+                  padding-bottom: 94px;   
+                 }
+                 .clients-list 
+                 {
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-between;
+                     margin-top: 50px;
+                 }
+                              
+                 .clients-link 
+                 {
+                  display: flex;
+                  width: 170px;
+                  height: 90px;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 24px 45px;
+                  border: 1px solid #AFB1B8;
+                  border-radius: 4px;
+                  margin-right: 30px;
+                 }
+                 .clients-link:nth-child(6) 
+                  {
+                  margin-right: 0px;
+                  }
+                  .clients-link:hover,
+                  .clients-link:focus 
+                  {
+                      border: 1px solid #2196F3;  
+                  }
+                  .clients-icon-svg 
+                  {
+                      fill: #AFB1B8;
+                  }
+                  .clients-link:hover .clients-icon-svg,
+                  .clients-link:focus .clients-icon-svg
+                  {
+                      fill: #2196F3;
                   }
                 /*подвал*/
     .footer .container 
@@ -506,7 +547,7 @@ html {box-sizing: border-box;}
                 {
                   display: flex;  
                 }
-                .footer-social-list-item 
+                .footer-social-list-link 
                 {
                     display: flex;
                     align-items: center;
@@ -521,8 +562,8 @@ html {box-sizing: border-box;}
                 {
                     margin-right: 0px;    
                 }
-                .footer-social-list-item:hover,
-                .footer-social-list-item:focus 
+                .footer-social-list-link:hover,
+                .footer-social-list-link:focus 
                 {
                  background: #2196F3;  
                 }
@@ -717,51 +758,6 @@ html {box-sizing: border-box;}
                 color: var(--primary-text-color);
                }
                
-               .clients .container 
-                {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding-top: 94px; 
-                padding-bottom: 94px;   
-               }
-               .clients-list 
-               {
-                   display: flex;
-                   align-items: center;
-                   justify-content: space-between;
-                   margin-top: 50px;
-               }
-                            
-               .clients-item 
-               {
-                display: flex;
-                width: 170px;
-                height: 90px;
-                justify-content: center;
-                align-items: center;
-                padding: 24px 45px;
-                border: 1px solid #AFB1B8;
-                border-radius: 4px;
-                margin-right: 30px;
-               }
-               .clients-item:nth-child(6) 
-                {
-                margin-right: 0px;
-                }
-                .clients-item:hover,
-                .clients-item:focus 
-                {
-                    border: 1px solid #2196F3;  
-                }
-                .clients-icon-svg 
-                {
-                    fill: #AFB1B8;
-                }
-                .clients-icon-svg:hover,
-                .clients-icon-svg:focus
-                {
-                    fill: #2196F3;
-                }
+             
 
                     
