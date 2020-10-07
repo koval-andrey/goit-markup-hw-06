@@ -102,8 +102,20 @@ html {box-sizing: border-box;}
     .header-link.current 
                 {
                 color: var(--accent-color); 
-                  
+                position: relative;  
                 }
+                .header-link.current::after
+                {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                left: 0;
+                top: 48px;
+
+                background: #2196F3;
+                border-radius: 2px;
+            }
         .address 
                 {
                     display: flex;
@@ -340,9 +352,32 @@ html {box-sizing: border-box;}
                 {
                     display: flex; 
                 }
+                .function-item 
+                {
+                   
+                    position: relative;
+                }
     .function-item:not(:last-child) 
                 {
                 margin-right: 30px;}
+                .function-item-overlay 
+                {
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                position: absolute; 
+                 width: 100%; 
+                 height: 70px;
+                 bottom: 0px;
+                 
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 1.14;
+                text-align: center;
+                color: #FFFFFF;
+                background: rgba(47, 48, 58, 0.8); 
+                }
     .function-title 
                 {
                     font-weight: bold;
@@ -756,6 +791,35 @@ html {box-sizing: border-box;}
                 letter-spacing: 0.03em;
                 padding-left: 24px;
                 color: var(--primary-text-color);
+               }
+               /*технохряк*/
+               .projects-wrapper 
+               {
+               position: relative;    
+               }
+               .project-overlay 
+               {
+                   display: flex;
+                   align-items: center;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    padding: 63px 24px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 1.56;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                    opacity: 0;
+                   background: rgba(33, 150, 243, 0.9);
+               }
+               .projects-wrapper:hover .project-overlay,
+               .projects-wrapper:focus .project-overlay 
+               {
+                   opacity: 1;
                }
                
              
