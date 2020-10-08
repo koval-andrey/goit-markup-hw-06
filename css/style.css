@@ -795,7 +795,8 @@ html {box-sizing: border-box;}
                /*технохряк*/
                .projects-wrapper 
                {
-               position: relative;    
+               position: relative; 
+               overflow: hidden;   
                }
                .project-overlay 
                {
@@ -805,7 +806,7 @@ html {box-sizing: border-box;}
                     width: 100%;
                     height: 100%;
                     left: 0;
-                    top: 0;
+                    top:0;
                     padding: 63px 24px;
                     font-style: normal;
                     font-weight: normal;
@@ -814,12 +815,19 @@ html {box-sizing: border-box;}
                     letter-spacing: 0.03em;
                     color: #FFFFFF;
                     opacity: 0;
+                    transform: translateY(100%);
+                   overflow: hidden;
                    background: rgba(33, 150, 243, 0.9);
+                   
                }
                .projects-wrapper:hover .project-overlay,
                .projects-wrapper:focus .project-overlay 
                {
                    opacity: 1;
+                   transform: translateY(0%);
+                   transition: all 600ms linear;
+                  
+
                }
                
              
