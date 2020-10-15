@@ -649,6 +649,11 @@ html {box-sizing: border-box;}
                     display: flex;
                     flex-direction: column;  
                 }
+                .footer-right-email 
+                {
+                    display: flex;
+                    flex-direction: column;     
+                }
                 .footer-link 
                 {
                     font-weight: normal;

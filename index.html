@@ -58,6 +58,41 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
+                    <form class="form-order" action="#">
+                        <div class="form-order-field">
+                            <h4 class="form-order-title">Оставьте ваши данные, мы вам перезвоним</h4>
+                            <input tabindex="1" type="text" class="form-order-input" 
+                            name="name" 
+                            id="name" placeholder="Иван Иванович">
+                            <label for="name" class="form-label">Имя</label>
+                        </div>
+                        <div class="form-order-field">
+                            <input tabindex="2" type="tel" class="form-order-input" 
+                            name="phone" 
+                            id="phone" placeholder="+380 97 000-00-00">
+                            <label for="phone" class="form-label">Телефон</label>
+                        </div>
+                        <div class="form-order-field">
+                            <input tabindex="3" type="email" class="form-order-input" 
+                            name="email" 
+                            id="email" placeholder="ivan@mail.com">
+                            <label for="email" class="form-label">Почта</label>
+                        </div>
+                        <div class="form-order-field">
+                            <h4 class="form-order-title">Комментарий</h4>
+                            <textarea tabindex="4" class="form-order-textarea" name="comment" placeholder="Введите текст"></textarea>  
+                        </div>
+                        <div class="form-order-field">
+                            <input tabindex="5" type="checkbox" class="form-order-checkbox"  value="yes"> 
+                            <span tabindex="" class="checkbox-link">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></span>
+
+                        </div>
+                        <div class="form-order-btn">
+                            <button tabindex="6" type="submit" class="form-order-submit">Отправить</button>
+
+                        </div>
+
+                    </form>
                     <button type="button" class="modal-btn" data-modal-close>X</button>
                 </div>
             </div>
@@ -369,7 +404,18 @@
                         </a>
                      </li>
                 </ul>
-                </li>
+                <div class="footer-right-email">
+                <h4 class="footer-link-join-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
+                <div class="footer-input">
+                    <input tabindex="0" type="email" class="footer-input-email" 
+                    name="email" 
+                    id="email" placeholder="E-mail">
+                    <label for="email" class="form-label"></label>
+                    <button tabindex="0" type="submit" class="footer-btn-submit">Подписаться <svg class="icon-send" width="24"
+                        height="24">
+                            <use href="./img/icons.svg/sprite.svg#icon-send"></use>
+                        </svg></button>
+                </div>
             </div>
         </div>
     </footer>
