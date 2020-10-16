@@ -282,6 +282,7 @@ html {box-sizing: border-box;}
                     0px 2px 1px rgba(0, 0, 0, 0.2);
                     border-radius: 4px;
                     background: #FFFFFF;
+                    padding: 40px;
                 }
                 .modal-btn 
                 {
@@ -318,7 +319,6 @@ html {box-sizing: border-box;}
                 }
                 .form-order-field 
                 {
-                position: relative;
                 width: 448px;
                 height: 40px;
                 margin-bottom: 10px;
@@ -329,8 +329,13 @@ html {box-sizing: border-box;}
                 }
                 .form-order-input 
                 {
+                    position: relative;
                     width: 448px;
                     height: 40px;
+                    border: 1px solid #2196F3;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                   
                     
                 }
                .form-label 
@@ -338,14 +343,14 @@ html {box-sizing: border-box;}
                 position: absolute;
                 top: 50%;
                 left: 20px;
+                padding-left: 42px;
                 transform: translateY(-50%);
                 color: #000;
                 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
                }
                .form-order-input:focus + .form-label 
                {
-               color: blue;
-               transform: translate(-15px, -30px);    
+               color: blue;    
                }
                 /*преимущества*/
                 
@@ -686,11 +691,7 @@ html {box-sizing: border-box;}
                     display: flex;
                     flex-direction: column;  
                 }
-                .footer-right-email 
-                {
-                    display: flex;
-                    flex-direction: column;     
-                }
+              
                 .footer-link 
                 {
                     font-weight: normal;
@@ -866,7 +867,75 @@ html {box-sizing: border-box;}
                     border-radius: 4px;
                     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
                 }
-                                                 
+                .footer-form {
+                   
+                }
+
+                .footer-right-email
+                 {
+                   
+                 } 
+                 .footer-link-join-title {}
+                 .footer-input 
+                 {
+                display: flex;
+                
+                 }
+                 .footer-form-label 
+                 {
+                     
+                    margin-left: 10px;    
+                 } 
+                 .footer-input-email 
+                 {
+                     width: 358px;
+                     height: 50px;
+                     
+                 }
+                 .footer-btn-submit 
+                 {
+                 
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 1.875;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+                width: 200px;
+                height: 50px;
+                border-radius: 4px;
+                border-style: none;
+                background-color: #2196F3;
+                transition-property: color, background-color;       
+                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+                transition-timing-function: linear;
+                    }
+                    .hero-btn:active,
+                    .hero-btn:focus 
+                {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 1.875;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.06em;
+                    color: var(--accent-color);
+                    background-color: #21f3d7;}
+                    
+                    .icon-send 
+                    {
+                     margin-left: 10px;   
+                    }
+
+                    .modal-btn:hover,
+                    .modal-btn:focus
+                    {
+                      border: var(--accent-color);
+                      color: var(--accent-color);
+                 }                                                               
                 .projects-list 
                 {
                     display: flex;

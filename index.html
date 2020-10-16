@@ -63,19 +63,25 @@
                             <h4 class="form-order-title">Оставьте ваши данные, мы вам перезвоним</h4>
                             <input tabindex="1" type="text" class="form-order-input" 
                             name="name" 
-                            id="name" placeholder="Иван Иванович">
+                            required 
+                            id="name" placeholder=" ">
+                            
                             <label for="name" class="form-label">Имя</label>
+                            <svg class="icon-form" width="10"
+                            height="10">
+                                <use href="./img/icons.svg/sprite.svg#person-black"></use>
+                            </svg>
                         </div>
                         <div class="form-order-field">
                             <input tabindex="2" type="tel" class="form-order-input" 
                             name="phone" 
-                            id="phone" placeholder="+380 97 000-00-00">
+                            id="phone" placeholder=" ">
                             <label for="phone" class="form-label">Телефон</label>
                         </div>
                         <div class="form-order-field">
                             <input tabindex="3" type="email" class="form-order-input" 
                             name="email" 
-                            id="email" placeholder="ivan@mail.com">
+                            id="email" placeholder=" ">
                             <label for="email" class="form-label">Почта</label>
                         </div>
                         <div class="form-order-field">
@@ -404,18 +410,22 @@
                         </a>
                      </li>
                 </ul>
+                </div>
+                <form  class="footer-form" action="#">
                 <div class="footer-right-email">
                 <h4 class="footer-link-join-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
                 <div class="footer-input">
                     <input tabindex="0" type="email" class="footer-input-email" 
                     name="email" 
                     id="email" placeholder="E-mail">
-                    <label for="email" class="form-label"></label>
-                    <button tabindex="0" type="submit" class="footer-btn-submit">Подписаться <svg class="icon-send" width="24"
+                    <label for="email" class="footer-form-label"></label>
+                    <button tabindex="0" type="submit" class="footer-btn-submit">Подписаться<svg class="icon-send" width="24"
                         height="24">
                             <use href="./img/icons.svg/sprite.svg#icon-send"></use>
                         </svg></button>
+                    </div>
                 </div>
+                </form>
             </div>
         </div>
     </footer>
