@@ -58,19 +58,19 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <form class="form-order" action="#">
+                    <form class="form-order" autocomplete="off">
                         <div class="form-order-field">
                             <h4 class="form-order-title">Оставьте ваши данные, мы вам перезвоним</h4>
-                            <input tabindex="1" type="text" class="form-order-input" 
-                            name="name" 
-                            required 
-                            id="name" placeholder=" ">
-                            
                             <label for="name" class="form-label">Имя</label>
-                            <svg class="icon-form" width="10"
-                            height="10">
-                                <use href="./img/icons.svg/sprite.svg#person-black"></use>
-                            </svg>
+                            <span class="form-icon"><svg class="icon-person" width="18"
+                                height="18">
+                                    <use href="./img/icons.svg/sprite.svg#person-black"></use>
+                                </svg> </span>
+                            <input  type="text" tabindex="1" class="form-order-input" 
+                            name="name" required 
+                             >
+                            
+                              
                         </div>
                         <div class="form-order-field">
                             <input tabindex="2" type="tel" class="form-order-input" 
@@ -90,7 +90,7 @@
                         </div>
                         <div class="form-order-field">
                             <input tabindex="5" type="checkbox" class="form-order-checkbox"  value="yes"> 
-                            <span tabindex="" class="checkbox-link">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></span>
+                            <span tabindex="" class="checkbox-link">Соглашаюсь с рассылкой и принимаю<a href="#">Условия договора</a></span>
 
                         </div>
                         <div class="form-order-btn">
