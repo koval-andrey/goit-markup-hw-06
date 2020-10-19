@@ -286,6 +286,7 @@ html {box-sizing: border-box;}
                 }
                 .form-order 
                 {
+                display: block;
                 margin-left: auto;
                 margin-right: auto;
                 }
@@ -313,7 +314,7 @@ html {box-sizing: border-box;}
                 }
                  .form-label 
                {
-                display: inline-block;
+                display: block;
                 font-size: 12px;
                 line-height: 1.17;       
                 letter-spacing: 0.01em;
@@ -331,20 +332,15 @@ html {box-sizing: border-box;}
                     box-sizing: border-box;
                     border-radius: 4px;                    
                 }
-                .form-order-input:focus
-                
-                {
-                border: 1px solid  #2196F3;   
-                }
-                .form-order-field:focus-within > .form-order-input 
-                {
-                    border-color: #2196F3;    
-                }
-                .form-order-field:focus-within > .form-icon  
-                {
-                    fill:#2196F3;     
-                }
-                .form-icon
+                .form-order-input:focus,
+                .form-order-input:hover,
+                .form-order-input:not(:placeholder-shown):valid
+                 {
+                    border-color: #2196F3;
+                    cursor: pointer; 
+                 }
+                 
+                 .form-icon-svg
                {
                 display: block;
                 z-index: 1;
@@ -352,9 +348,15 @@ html {box-sizing: border-box;}
                 top: 50%;
                 left: 8px;
                 fill: #212121;
-                
                }
-          
+               .form-order-field:hover .form-icon-svg,
+               .form-order-field:focus-within .form-icon-svg
+               {
+               fill: #2196F3;
+               }
+              
+              
+             
                .form-order-textarea 
                 {
                   resize: none;
@@ -382,8 +384,18 @@ html {box-sizing: border-box;}
                     
                     color: rgba(117, 117, 117, 0.5);  
                 }
+                .agreement 
+                {
+                    display: flex;
+                }
                 .form-order-checkbox
                 {
+                    display: inline-block;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+    
+                    
                     font-style: normal;
                     font-weight: normal;
                     font-size: 14px;
@@ -392,6 +404,35 @@ html {box-sizing: border-box;}
                     
                     color: #757575;
                 }
+                
+
+            .checkbox-icon 
+            {
+                display: inline-block;
+                width: 15px;
+                height: 16px;
+               align-self: center;
+                margin-left: 8px;
+                background-color: transparent;
+                border: 2px solid #212121;
+                border-radius: 2px;
+            }
+            .form-order-checkbox:checked + .checkbox-icon
+            {
+            
+                background-image: url('../img/icons.svg/icon-check.svg');
+                background-size: contain;
+                background-origin: border-box;
+                border-color: transparent;
+            }
+            .checkbox-link-oder 
+            {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1.71;
+            color: #2196F3;
+            }
                 .form-order-btn 
                 {
                     display: flex;
@@ -1015,7 +1056,7 @@ html {box-sizing: border-box;}
                 .footer-btn-submit 
                  {
                 
-                display: block;
+                display: inline-block;
                 align-items: center;
                 text-align: center;
                 letter-spacing: 0.06em;
@@ -1035,7 +1076,7 @@ html {box-sizing: border-box;}
                  .icon-send 
                  {
                     fill: #FFFFFF;
-                    text-align: center;
+                    vertical-align: middle;
 
 
                  }
